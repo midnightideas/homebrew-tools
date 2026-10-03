@@ -5,5 +5,5 @@ A collection of Homebrew formulaes, which I randomly created.
 ## Installation
 
 ```
-brew tap midnightideas/extras
+brew tap midnightideas/tools
 ```
