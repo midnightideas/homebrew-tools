@@ -20,13 +20,12 @@ class PhotocraftCli < Formula
 
   def install
     if OS.mac?
-      # The macOS zip extracts to <name>-<version>-macos-universal/<name>;
-      # install just the binary into HOMEBREW_PREFIX/bin.
-      bin.install "#{name}-#{version}-macos-universal/#{name}"
+      # macOS zip extracts to photocraft-cli-0.7.0-macos-universal/; install just the binary.
+      bin.install "photocraft-cli-0.7.0-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "photocraft-#{version}-linux-aarch64/bin/#{name}"
+      bin.install "photocraft-0.7.0-linux-aarch64/bin/#{name}"
     else
-      bin.install "photocraft-#{version}-linux-x86_64/bin/#{name}"
+      bin.install "photocraft-0.7.0-linux-x86_64/bin/#{name}"
     end
   end
 
