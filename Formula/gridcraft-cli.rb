@@ -20,13 +20,12 @@ class GridcraftCli < Formula
 
   def install
     if OS.mac?
-      # The macOS zip extracts to <name>-<version>-macos-universal/<name>;
-      # install just the binary into HOMEBREW_PREFIX/bin.
-      bin.install "#{name}-#{version}-macos-universal/#{name}"
+      # macOS zip extracts to gridcraft-cli-0.5.0-macos-universal/; install just the binary.
+      bin.install "gridcraft-cli-0.5.0-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "gridcraft-#{version}-linux-aarch64/bin/#{name}"
+      bin.install "gridcraft-0.5.0-linux-aarch64/bin/#{name}"
     else
-      bin.install "gridcraft-#{version}-linux-x86_64/bin/#{name}"
+      bin.install "gridcraft-0.5.0-linux-x86_64/bin/#{name}"
     end
   end
 
