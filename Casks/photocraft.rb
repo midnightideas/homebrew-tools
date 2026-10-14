@@ -18,7 +18,7 @@ cask "photocraft" do
   end
 
   name "PhotoCraft"
-  desc "Photoshop-style raster image editor (Rust + wgpu + egui)."
+  desc "Photoshop-style raster image editor"
   homepage "https://github.com/storytold/photocraft"
 
   livecheck do
