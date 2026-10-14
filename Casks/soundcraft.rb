@@ -18,7 +18,7 @@ cask "soundcraft" do
   end
 
   name "SoundCraft"
-  desc "Pro Tools-style digital audio workstation (Rust + egui)."
+  desc "Pro Tools-style digital audio workstation"
   homepage "https://github.com/storytold/soundcraft"
 
   livecheck do
