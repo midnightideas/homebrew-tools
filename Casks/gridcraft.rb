@@ -18,7 +18,7 @@ cask "gridcraft" do
   end
 
   name "GridCraft"
-  desc "Excel-style spreadsheet application (Rust + egui)."
+  desc "Excel-style spreadsheet application"
   homepage "https://github.com/storytold/gridcraft"
 
   livecheck do
