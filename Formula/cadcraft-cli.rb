@@ -1,31 +1,31 @@
 class CadcraftCli < Formula
-  desc "AutoCAD-style 2D/3D CAD application (Rust + egui)."
+  desc "AutoCAD-style 2D/3D CAD application (CLI)."
   homepage "https://github.com/storytold/cadcraft"
-  version "0.5.0"
+  version "0.6.2"
 
   on_macos do
-    url "https://github.com/storytold/cadcraft/releases/download/v#{version}/cadcraft-cli-0.5.0-macos-universal.zip"
-    sha256 "8834cf6fce05e62f0533915aec48241db9b89f30e3e2821c77bba5476b0e9053"
+    url "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-cli-0.6.2-macos-universal.zip"
+    sha256 "2ffe9b0a0169810e3177e4f1119807e04fb4ea96efe5e3e1599cea52b25c87a1"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/storytold/cadcraft/releases/download/v#{version}/cadcraft-0.5.0-linux-aarch64.tar.gz"
-      sha256 "15f5047c1edce4b28f54c00cf5aae256b8fcc0bdd617e4dec88a1c54b26cefa8"
+      url "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-0.6.2-linux-aarch64.tar.gz"
+      sha256 "0700b0f032517177d9dee6891d892ee0137a8ffe12b0051d5da0bddb6a9fe332"
     else
-      url "https://github.com/storytold/cadcraft/releases/download/v#{version}/cadcraft-0.5.0-linux-x86_64.tar.gz"
-      sha256 "036c3b401987b6a9991b5fc7ba097d5b717e8d18522f7c3f626b0f6a363e208e"
+      url "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-0.6.2-linux-x86_64.tar.gz"
+      sha256 "4a3ec7c5350e7212bdb4f735af6c6cf319ee177c11529ec547c77c92642ad49d"
     end
   end
 
   def install
     if OS.mac?
-      # macOS zip extracts to cadcraft-cli-0.5.0-macos-universal/; install just the binary.
-      bin.install "cadcraft-cli-0.5.0-macos-universal/#{name}"
+      # macOS zip extracts to cadcraft-cli-0.6.2-macos-universal/; install just the binary.
+      bin.install "cadcraft-cli-0.6.2-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "cadcraft-0.5.0-linux-aarch64/bin/#{name}"
+      bin.install "cadcraft-0.6.2-linux-aarch64/bin/#{name}"
     else
-      bin.install "cadcraft-0.5.0-linux-x86_64/bin/#{name}"
+      bin.install "cadcraft-0.6.2-linux-x86_64/bin/#{name}"
     end
   end
 
