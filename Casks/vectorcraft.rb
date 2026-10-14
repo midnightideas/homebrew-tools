@@ -4,7 +4,7 @@ cask "vectorcraft" do
   on_macos do
     url "https://github.com/storytold/vectorcraft/releases/download/v0.10.0/vectorcraft-0.10.0-macos-universal.dmg"
     sha256 "c0e6d3de60d9c4217830f65e136a6a8f9381881c2525dae0558292cd36352e29"
-    app "Vectorcraft.app"
+    app "VectorCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "vectorcraft" do
     end
   end
 
-  name "Vectorcraft"
+  name "VectorCraft"
   desc "Illustrator-style vector editor (Rust + egui)."
   homepage "https://github.com/storytold/vectorcraft"
 
