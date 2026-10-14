@@ -4,7 +4,7 @@ cask "effectcraft" do
   on_macos do
     url "https://github.com/storytold/effectcraft/releases/download/v0.9.2/effectcraft-0.9.2-macos-universal.dmg"
     sha256 "abc02b0b7afda63802dbd4af8ded9c0c35f18af7b09e88002adcc986f676f6fe"
-    app "Effectcraft.app"
+    app "EffectCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "effectcraft" do
     end
   end
 
-  name "Effectcraft"
+  name "EffectCraft"
   desc "After Effects-style motion graphics and compositing (Rust + egui)."
   homepage "https://github.com/storytold/effectcraft"
 
