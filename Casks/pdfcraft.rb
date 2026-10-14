@@ -4,7 +4,7 @@ cask "pdfcraft" do
   on_macos do
     url "https://github.com/storytold/pdfcraft/releases/download/v0.7.1/pdfcraft-0.7.1-macos-universal.dmg"
     sha256 "cafa51b2bbd2fa7fd532cb38cafec54e988dd37c81bc47c26e5f08e472dc92bf"
-    app "PDFcraft.app"
+    app "PdfCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "pdfcraft" do
     end
   end
 
-  name "PDFcraft"
+  name "PdfCraft"
   desc "Acrobat-style PDF viewer and editor (Rust + egui)."
   homepage "https://github.com/storytold/pdfcraft"
 
