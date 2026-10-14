@@ -4,7 +4,7 @@ cask "designcraft" do
   on_macos do
     url "https://github.com/storytold/designcraft/releases/download/v0.7.1/designcraft-0.7.1-macos-universal.dmg"
     sha256 "c8520b8fa702e19436c06269792e68a3ca09a629c6d5cb59193355ef3e89ec52"
-    app "Designcraft.app"
+    app "DesignCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "designcraft" do
     end
   end
 
-  name "Designcraft"
+  name "DesignCraft"
   desc "InDesign-style page layout application (Rust + egui)."
   homepage "https://github.com/storytold/designcraft"
 
