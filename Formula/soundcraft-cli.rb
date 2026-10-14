@@ -1,6 +1,7 @@
 class SoundcraftCli < Formula
   desc "Pro Tools-style digital audio workstation (CLI)."
   homepage "https://github.com/storytold/soundcraft"
+  name "SoundCraft CLI"
   version "0.6.1"
 
   on_macos do
