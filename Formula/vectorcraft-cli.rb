@@ -1,6 +1,7 @@
 class VectorcraftCli < Formula
   desc "Illustrator-style vector editor (CLI)."
   homepage "https://github.com/storytold/vectorcraft"
+  name "VectorCraft CLI"
   version "0.10.0"
 
   on_macos do
