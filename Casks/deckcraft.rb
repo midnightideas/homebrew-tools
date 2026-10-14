@@ -4,7 +4,7 @@ cask "deckcraft" do
   on_macos do
     url "https://github.com/storytold/deckcraft/releases/download/v0.6.1/deckcraft-0.6.1-macos-universal.dmg"
     sha256 "7f9dcb6dc235cc605dfff31a68c4c75fd2ace8a5117cd3b4ef31deaee941619a"
-    app "Deckcraft.app"
+    app "DeckCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "deckcraft" do
     end
   end
 
-  name "Deckcraft"
+  name "DeckCraft"
   desc "PowerPoint-style presentation builder (Rust + egui)."
   homepage "https://github.com/storytold/deckcraft"
 
