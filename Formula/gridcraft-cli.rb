@@ -1,6 +1,7 @@
 class GridcraftCli < Formula
   desc "Excel-style spreadsheet application (CLI)."
   homepage "https://github.com/storytold/gridcraft"
+  name "GridCraft CLI"
   version "0.6.1"
 
   on_macos do
