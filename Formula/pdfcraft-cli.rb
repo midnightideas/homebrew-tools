@@ -1,31 +1,31 @@
 class PdfcraftCli < Formula
-  desc "Acrobat-style PDF viewer and editor (Rust + egui)."
+  desc "Acrobat-style PDF viewer and editor (CLI)."
   homepage "https://github.com/storytold/pdfcraft"
-  version "0.6.0"
+  version "0.7.1"
 
   on_macos do
-    url "https://github.com/storytold/pdfcraft/releases/download/v#{version}/pdfcraft-cli-0.6.0-macos-universal.zip"
-    sha256 "85bf80b0732f2556f3133e25693d1f1dfdd2683cd6236aa154bb19f73515b7cf"
+    url "https://github.com/storytold/pdfcraft/releases/download/v0.7.1/pdfcraft-cli-0.7.1-macos-universal.zip"
+    sha256 "6631b868e65aa9eceabf416096a26681f80ca66a7eae53cca82d3239a847aa63"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/storytold/pdfcraft/releases/download/v#{version}/pdfcraft-0.6.0-linux-aarch64.tar.gz"
-      sha256 "20fb5175db5c992355b6f1c73cc5b163be05d2f4f270afef6a184bbae3b38a59"
+      url "https://github.com/storytold/pdfcraft/releases/download/v0.7.1/pdfcraft-0.7.1-linux-aarch64.tar.gz"
+      sha256 "77baad6346e6d0087872fcb6f6f64e6bdb7f8401658ac96119d462aa1d7ae4e0"
     else
-      url "https://github.com/storytold/pdfcraft/releases/download/v#{version}/pdfcraft-0.6.0-linux-x86_64.tar.gz"
-      sha256 "9a136e71e37b459ed5746dbe19a364ce84cf5d995c6f6c98af6147d818390a53"
+      url "https://github.com/storytold/pdfcraft/releases/download/v0.7.1/pdfcraft-0.7.1-linux-x86_64.tar.gz"
+      sha256 "bc7d651511273720f6a5ccbe0dd5b2c4ddccb6c576a0aff619f39d2c5667a315"
     end
   end
 
   def install
     if OS.mac?
-      # macOS zip extracts to pdfcraft-cli-0.6.0-macos-universal/; install just the binary.
-      bin.install "pdfcraft-cli-0.6.0-macos-universal/#{name}"
+      # macOS zip extracts to pdfcraft-cli-0.7.1-macos-universal/; install just the binary.
+      bin.install "pdfcraft-cli-0.7.1-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "pdfcraft-0.6.0-linux-aarch64/bin/#{name}"
+      bin.install "pdfcraft-0.7.1-linux-aarch64/bin/#{name}"
     else
-      bin.install "pdfcraft-0.6.0-linux-x86_64/bin/#{name}"
+      bin.install "pdfcraft-0.7.1-linux-x86_64/bin/#{name}"
     end
   end
 
