@@ -1,6 +1,7 @@
 class WordcraftCli < Formula
   desc "Word-style word processor CLI for .docx files (Rust + egui)."
   homepage "https://github.com/storytold/wordcraft"
+  name "WordCraft CLI"
   version "0.6.1"
 
   on_macos do
