@@ -1,5 +1,5 @@
 class WordcraftCli < Formula
-  desc "Word-style word processor CLI for .docx files (Rust + egui)."
+  desc "Word-style word processor CLI for .docx files"
   homepage "https://github.com/storytold/wordcraft"
   name "WordCraft CLI"
   version "0.6.1"
