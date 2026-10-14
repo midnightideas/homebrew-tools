@@ -1,6 +1,7 @@
 class CadcraftCli < Formula
   desc "AutoCAD-style 2D/3D CAD application (CLI)."
   homepage "https://github.com/storytold/cadcraft"
+  name "CADCraft CLI"
   version "0.6.2"
 
   on_macos do
