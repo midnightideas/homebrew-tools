@@ -1,31 +1,31 @@
 class DeckcraftCli < Formula
-  desc "PowerPoint-style presentation builder (Rust + egui)."
+  desc "PowerPoint-style presentation builder (CLI)."
   homepage "https://github.com/storytold/deckcraft"
-  version "0.5.0"
+  version "0.6.1"
 
   on_macos do
-    url "https://github.com/storytold/deckcraft/releases/download/v#{version}/deckcraft-cli-0.5.0-macos-universal.zip"
-    sha256 "e4f8562c4c56337d2ae4069d182e2e325ddbf700b6248272d96f3e469702990b"
+    url "https://github.com/storytold/deckcraft/releases/download/v0.6.1/deckcraft-cli-0.6.1-macos-universal.zip"
+    sha256 "38d95bb1b7a9c126366b4c18205136742525f3114223dde945e5f114b8077c28"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/storytold/deckcraft/releases/download/v#{version}/deckcraft-0.5.0-linux-aarch64.tar.gz"
-      sha256 "9fb43aedb9b223cf62f34d2b50900c6337a7cd5cb3178b9b530bb93a213c402d"
+      url "https://github.com/storytold/deckcraft/releases/download/v0.6.1/deckcraft-0.6.1-linux-aarch64.tar.gz"
+      sha256 "686b51d14dee18d505fcfc1ce5dd42b93de42350735d55311793a63f44f1b145"
     else
-      url "https://github.com/storytold/deckcraft/releases/download/v#{version}/deckcraft-0.5.0-linux-x86_64.tar.gz"
-      sha256 "c2648c6071f631ecc6639ce6b7d60f68eed83ddeaba6b1559b07c5046863117c"
+      url "https://github.com/storytold/deckcraft/releases/download/v0.6.1/deckcraft-0.6.1-linux-x86_64.tar.gz"
+      sha256 "1215e64f11aa68529be3efe2078f51c39a7669de1d63cce1b558ac1193f17569"
     end
   end
 
   def install
     if OS.mac?
-      # macOS zip extracts to deckcraft-cli-0.5.0-macos-universal/; install just the binary.
-      bin.install "deckcraft-cli-0.5.0-macos-universal/#{name}"
+      # macOS zip extracts to deckcraft-cli-0.6.1-macos-universal/; install just the binary.
+      bin.install "deckcraft-cli-0.6.1-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "deckcraft-0.5.0-linux-aarch64/bin/#{name}"
+      bin.install "deckcraft-0.6.1-linux-aarch64/bin/#{name}"
     else
-      bin.install "deckcraft-0.5.0-linux-x86_64/bin/#{name}"
+      bin.install "deckcraft-0.6.1-linux-x86_64/bin/#{name}"
     end
   end
 
