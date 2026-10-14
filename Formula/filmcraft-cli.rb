@@ -1,6 +1,7 @@
 class FilmcraftCli < Formula
   desc "Premiere-style non-linear video editor (CLI)."
   homepage "https://github.com/storytold/filmcraft"
+  name "FilmCraft CLI"
   version "0.7.2"
 
   on_macos do
