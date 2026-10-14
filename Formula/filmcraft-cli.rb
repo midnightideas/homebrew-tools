@@ -1,31 +1,31 @@
 class FilmcraftCli < Formula
-  desc "Premiere-style non-linear video editor (Rust + egui)."
+  desc "Premiere-style non-linear video editor (CLI)."
   homepage "https://github.com/storytold/filmcraft"
-  version "0.6.0"
+  version "0.7.2"
 
   on_macos do
-    url "https://github.com/storytold/filmcraft/releases/download/v#{version}/filmcraft-cli-0.6.0-macos-universal.zip"
-    sha256 "7ede2aa3e8994ca8363618ef649526546cf951b11a8eaf895b9471101cf5bd32"
+    url "https://github.com/storytold/filmcraft/releases/download/v0.7.2/filmcraft-cli-0.7.2-macos-universal.zip"
+    sha256 "1edb5ba5391bd7439ebd0cda059f81d1a6e0327be59aeb91a5a532b1ee1a287e"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/storytold/filmcraft/releases/download/v#{version}/filmcraft-0.6.0-linux-aarch64.tar.gz"
-      sha256 "aa0ad54469e1c257b6bfb6753f75e82990cdf28afd9da9542e541a54c1d58dbf"
+      url "https://github.com/storytold/filmcraft/releases/download/v0.7.2/filmcraft-0.7.2-linux-aarch64.tar.gz"
+      sha256 "4af56f649a6fb19dcae386abd59921ec6c9190b725014517075fa4d81123c68a"
     else
-      url "https://github.com/storytold/filmcraft/releases/download/v#{version}/filmcraft-0.6.0-linux-x86_64.tar.gz"
-      sha256 "b3d706d599699ead76b46a29d5697287b9f75a0bc9eb40f7733db7657dae8204"
+      url "https://github.com/storytold/filmcraft/releases/download/v0.7.2/filmcraft-0.7.2-linux-x86_64.tar.gz"
+      sha256 "4171c4bf5f57fd29475655f8a6df4719feda8c8f3ed95b2475d8dc112ad3be86"
     end
   end
 
   def install
     if OS.mac?
-      # macOS zip extracts to filmcraft-cli-0.6.0-macos-universal/; install just the binary.
-      bin.install "filmcraft-cli-0.6.0-macos-universal/#{name}"
+      # macOS zip extracts to filmcraft-cli-0.7.2-macos-universal/; install just the binary.
+      bin.install "filmcraft-cli-0.7.2-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "filmcraft-0.6.0-linux-aarch64/bin/#{name}"
+      bin.install "filmcraft-0.7.2-linux-aarch64/bin/#{name}"
     else
-      bin.install "filmcraft-0.6.0-linux-x86_64/bin/#{name}"
+      bin.install "filmcraft-0.7.2-linux-x86_64/bin/#{name}"
     end
   end
 
