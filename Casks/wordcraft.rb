@@ -4,7 +4,7 @@ cask "wordcraft" do
   on_macos do
     url "https://github.com/storytold/wordcraft/releases/download/v0.6.1/wordcraft-0.6.1-macos-universal.dmg"
     sha256 "6cfbc5b0c1270894f4df7eed15f6d880d01f4733f856cee55d3793bd738786ae"
-    app "Wordcraft.app"
+    app "WordCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "wordcraft" do
     end
   end
 
-  name "Wordcraft"
+  name "WordCraft"
   desc "Word-style word processor for .docx files (Rust + egui)."
   homepage "https://github.com/storytold/wordcraft"
 
