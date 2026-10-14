@@ -1,6 +1,7 @@
 class DesigncraftCli < Formula
   desc "InDesign-style page layout application (CLI)."
   homepage "https://github.com/storytold/designcraft"
+  name "DesignCraft CLI"
   version "0.7.1"
 
   on_macos do
