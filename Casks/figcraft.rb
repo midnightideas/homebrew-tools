@@ -18,7 +18,7 @@ cask "figcraft" do
   end
 
   name "FigCraft"
-  desc "Figma-style collaborative design and prototyping tool (Rust + egui)."
+  desc "Figma-style collaborative design and prototyping tool"
   homepage "https://github.com/storytold/figcraft"
 
   livecheck do
