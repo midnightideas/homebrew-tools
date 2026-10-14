@@ -1,6 +1,7 @@
 class LightcraftCli < Formula
   desc "Lightroom-style photo library and raw development (CLI)."
   homepage "https://github.com/storytold/lightcraft"
+  name "LightCraft CLI"
   version "0.7.1"
 
   on_macos do
