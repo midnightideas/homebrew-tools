@@ -1,6 +1,7 @@
 class PhotocraftCli < Formula
   desc "Photoshop-style raster image editor (CLI)."
   homepage "https://github.com/storytold/photocraft"
+  name "PhotoCraft CLI"
   version "0.8.2"
 
   on_macos do
