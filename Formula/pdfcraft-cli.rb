@@ -1,6 +1,7 @@
 class PdfcraftCli < Formula
   desc "Acrobat-style PDF viewer and editor (CLI)."
   homepage "https://github.com/storytold/pdfcraft"
+  name "PdfCraft CLI"
   version "0.7.1"
 
   on_macos do
