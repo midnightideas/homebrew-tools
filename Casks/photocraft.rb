@@ -4,7 +4,7 @@ cask "photocraft" do
   on_macos do
     url "https://github.com/storytold/photocraft/releases/download/v0.8.2/photocraft-0.8.2-macos-universal.dmg"
     sha256 "d31fe9f86b521319e412515c5313a56dfa7ca015203e2cbaf49a5b1ddb59a601"
-    app "Photocraft.app"
+    app "PhotoCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "photocraft" do
     end
   end
 
-  name "Photocraft"
+  name "PhotoCraft"
   desc "Photoshop-style raster image editor (Rust + wgpu + egui)."
   homepage "https://github.com/storytold/photocraft"
 
