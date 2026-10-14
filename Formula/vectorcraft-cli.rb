@@ -1,31 +1,31 @@
 class VectorcraftCli < Formula
-  desc "Illustrator-style vector editor (Rust + egui)."
+  desc "Illustrator-style vector editor (CLI)."
   homepage "https://github.com/storytold/vectorcraft"
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
-    url "https://github.com/storytold/vectorcraft/releases/download/v#{version}/vectorcraft-cli-0.9.0-macos-universal.zip"
-    sha256 "0e6fc38dd1ec432fb4a133ee1b1efe935d739f0fcb376b1925ee89473d55a61b"
+    url "https://github.com/storytold/vectorcraft/releases/download/v0.10.0/vectorcraft-cli-0.10.0-macos-universal.zip"
+    sha256 "0744d0d606747eaf521e6529d02477f07ca6d04fb64c7c03247aab0dd4c19968"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/storytold/vectorcraft/releases/download/v#{version}/vectorcraft-0.9.0-linux-aarch64.tar.gz"
-      sha256 "5c1fd3b5f50943be384c3e682ef1c573004059af50d6a8066981a1caffea8c43"
+      url "https://github.com/storytold/vectorcraft/releases/download/v0.10.0/vectorcraft-0.10.0-linux-aarch64.tar.gz"
+      sha256 "1ab5a2739c4f06d27538914c86839f6a78582f94aed7c411caa1988fe22b8a6b"
     else
-      url "https://github.com/storytold/vectorcraft/releases/download/v#{version}/vectorcraft-0.9.0-linux-x86_64.tar.gz"
-      sha256 "afbc4a0904740dfd1208e717664eb294965055e74c227c2ac3dc53af502e46a4"
+      url "https://github.com/storytold/vectorcraft/releases/download/v0.10.0/vectorcraft-0.10.0-linux-x86_64.tar.gz"
+      sha256 "a55735a192877038c9b4c3069504f7a73a05433a48edddd8e94fc7d2995aa6fc"
     end
   end
 
   def install
     if OS.mac?
-      # macOS zip extracts to vectorcraft-cli-0.9.0-macos-universal/; install just the binary.
-      bin.install "vectorcraft-cli-0.9.0-macos-universal/#{name}"
+      # macOS zip extracts to vectorcraft-cli-0.10.0-macos-universal/; install just the binary.
+      bin.install "vectorcraft-cli-0.10.0-macos-universal/#{name}"
     elsif Hardware::CPU.arm?
-      bin.install "vectorcraft-0.9.0-linux-aarch64/bin/#{name}"
+      bin.install "vectorcraft-0.10.0-linux-aarch64/bin/#{name}"
     else
-      bin.install "vectorcraft-0.9.0-linux-x86_64/bin/#{name}"
+      bin.install "vectorcraft-0.10.0-linux-x86_64/bin/#{name}"
     end
   end
 
