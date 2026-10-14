@@ -1,6 +1,7 @@
 class FigcraftCli < Formula
   desc "Figma-style collaborative design and prototyping tool (CLI)."
   homepage "https://github.com/storytold/figcraft"
+  name "FigCraft CLI"
   version "0.5.1"
 
   on_macos do
