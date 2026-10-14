@@ -18,7 +18,7 @@ cask "vectorcraft" do
   end
 
   name "VectorCraft"
-  desc "Illustrator-style vector editor (Rust + egui)."
+  desc "Illustrator-style vector editor"
   homepage "https://github.com/storytold/vectorcraft"
 
   livecheck do
