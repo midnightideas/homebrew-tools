@@ -18,7 +18,7 @@ cask "wordcraft" do
   end
 
   name "WordCraft"
-  desc "Word-style word processor for .docx files (Rust + egui)."
+  desc "Word-style word processor for .docx files"
   homepage "https://github.com/storytold/wordcraft"
 
   livecheck do
