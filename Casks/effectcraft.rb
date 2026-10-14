@@ -18,7 +18,7 @@ cask "effectcraft" do
   end
 
   name "EffectCraft"
-  desc "After Effects-style motion graphics and compositing (Rust + egui)."
+  desc "After Effects-style motion graphics and compositing"
   homepage "https://github.com/storytold/effectcraft"
 
   livecheck do
