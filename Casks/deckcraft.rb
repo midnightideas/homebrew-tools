@@ -18,7 +18,7 @@ cask "deckcraft" do
   end
 
   name "DeckCraft"
-  desc "PowerPoint-style presentation builder (Rust + egui)."
+  desc "PowerPoint-style presentation builder"
   homepage "https://github.com/storytold/deckcraft"
 
   livecheck do
