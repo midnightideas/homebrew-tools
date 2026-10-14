@@ -18,7 +18,7 @@ cask "pdfcraft" do
   end
 
   name "PdfCraft"
-  desc "Acrobat-style PDF viewer and editor (Rust + egui)."
+  desc "Acrobat-style PDF viewer and editor"
   homepage "https://github.com/storytold/pdfcraft"
 
   livecheck do
