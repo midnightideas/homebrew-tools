@@ -18,7 +18,7 @@ cask "designcraft" do
   end
 
   name "DesignCraft"
-  desc "InDesign-style page layout application (Rust + egui)."
+  desc "InDesign-style page layout application"
   homepage "https://github.com/storytold/designcraft"
 
   livecheck do
