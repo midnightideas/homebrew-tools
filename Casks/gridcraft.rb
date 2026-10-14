@@ -4,7 +4,7 @@ cask "gridcraft" do
   on_macos do
     url "https://github.com/storytold/gridcraft/releases/download/v0.6.1/gridcraft-0.6.1-macos-universal.dmg"
     sha256 "65b374d3098e7c6a76de93babccfe561201a02629433a392463c9eb298a3ba4f"
-    app "Gridcraft.app"
+    app "GridCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "gridcraft" do
     end
   end
 
-  name "Gridcraft"
+  name "GridCraft"
   desc "Excel-style spreadsheet application (Rust + egui)."
   homepage "https://github.com/storytold/gridcraft"
 
