@@ -18,7 +18,7 @@ cask "lightcraft" do
   end
 
   name "LightCraft"
-  desc "Lightroom-style photo library and raw development (Rust + egui)."
+  desc "Lightroom-style photo library and raw development"
   homepage "https://github.com/storytold/lightcraft"
 
   livecheck do
