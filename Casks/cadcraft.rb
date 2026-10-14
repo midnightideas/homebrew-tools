@@ -4,7 +4,7 @@ cask "cadcraft" do
   on_macos do
     url "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-0.6.2-macos-universal.dmg"
     sha256 "f8255281d824a1a8b0f051f7d11e41a786ab081d8873f517ae64bbb7e1a14c8c"
-    app "CADcraft.app"
+    app "CADCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "cadcraft" do
     end
   end
 
-  name "CADcraft"
+  name "CADCraft"
   desc "AutoCAD-style 2D/3D CAD application (Rust + egui)."
   homepage "https://github.com/storytold/cadcraft"
 
