@@ -4,7 +4,7 @@ cask "soundcraft" do
   on_macos do
     url "https://github.com/storytold/soundcraft/releases/download/v0.6.1/soundcraft-0.6.1-macos-universal.dmg"
     sha256 "94f014708e0173c13630bb8fa4163124d3bbb7af571e0f03d9f9b3027f90d0e7"
-    app "Soundcraft.app"
+    app "SoundCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "soundcraft" do
     end
   end
 
-  name "Soundcraft"
+  name "SoundCraft"
   desc "Pro Tools-style digital audio workstation (Rust + egui)."
   homepage "https://github.com/storytold/soundcraft"
 
