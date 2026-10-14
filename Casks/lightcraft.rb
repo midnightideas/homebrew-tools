@@ -4,7 +4,7 @@ cask "lightcraft" do
   on_macos do
     url "https://github.com/storytold/lightcraft/releases/download/v0.7.1/lightcraft-0.7.1-macos-universal.dmg"
     sha256 "9c7aaf1ab532ee81819fded3ec451af5a2bad3b7c1b5c9d48e36b82239331457"
-    app "Lightcraft.app"
+    app "LightCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "lightcraft" do
     end
   end
 
-  name "Lightcraft"
+  name "LightCraft"
   desc "Lightroom-style photo library and raw development (Rust + egui)."
   homepage "https://github.com/storytold/lightcraft"
 
