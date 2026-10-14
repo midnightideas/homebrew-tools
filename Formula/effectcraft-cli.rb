@@ -1,6 +1,7 @@
 class EffectcraftCli < Formula
   desc "After Effects-style motion graphics and compositing (CLI)."
   homepage "https://github.com/storytold/effectcraft"
+  name "EffectCraft CLI"
   version "0.9.2"
 
   on_macos do
