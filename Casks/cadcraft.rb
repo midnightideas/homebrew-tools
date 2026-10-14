@@ -18,7 +18,7 @@ cask "cadcraft" do
   end
 
   name "CADCraft"
-  desc "AutoCAD-style 2D/3D CAD application (Rust + egui)."
+  desc "AutoCAD-style 2D/3D CAD application"
   homepage "https://github.com/storytold/cadcraft"
 
   livecheck do
