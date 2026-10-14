@@ -1,6 +1,7 @@
 class DeckcraftCli < Formula
   desc "PowerPoint-style presentation builder (CLI)."
   homepage "https://github.com/storytold/deckcraft"
+  name "DeckCraft CLI"
   version "0.6.1"
 
   on_macos do
