@@ -18,7 +18,7 @@ cask "filmcraft" do
   end
 
   name "FilmCraft"
-  desc "Premiere-style non-linear video editor (Rust + egui)."
+  desc "Premiere-style non-linear video editor"
   homepage "https://github.com/storytold/filmcraft"
 
   livecheck do
