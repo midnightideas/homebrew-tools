@@ -4,7 +4,7 @@ cask "filmcraft" do
   on_macos do
     url "https://github.com/storytold/filmcraft/releases/download/v0.7.2/filmcraft-0.7.2-macos-universal.dmg"
     sha256 "df8f6ec7f7c7d227549c20579c65b9f6b2635ccd994410bb70c8d0369a6b9fb7"
-    app "Filmcraft.app"
+    app "FilmCraft.app"
   end
 
   on_linux do
@@ -17,7 +17,7 @@ cask "filmcraft" do
     end
   end
 
-  name "Filmcraft"
+  name "FilmCraft"
   desc "Premiere-style non-linear video editor (Rust + egui)."
   homepage "https://github.com/storytold/filmcraft"
 
