@@ -22,9 +22,9 @@ class DeckcraftCli < Formula
         if OS.mac?
             bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
