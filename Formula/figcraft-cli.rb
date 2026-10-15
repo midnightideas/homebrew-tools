@@ -20,12 +20,11 @@ class FigcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to figcraft-cli-0.6.0-macos-universal/; install just the binary.
-            bin.install "figcraft-cli-0.6.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "figcraft-0.6.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "figcraft-0.6.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
