@@ -20,12 +20,11 @@ class VectorcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to vectorcraft-cli-0.11.0-macos-universal/; install just the binary.
-            bin.install "vectorcraft-cli-0.11.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "vectorcraft-0.11.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "vectorcraft-0.11.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
