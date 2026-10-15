@@ -1,32 +1,31 @@
 class LightcraftCli < Formula
     desc "Lightroom-style photo library and raw development (CLI)."
     homepage "https://github.com/storytold/lightcraft"
-    name "LightCraft CLI"
-    version "0.7.1"
+    version "0.8.0"
 
     on_macos do
-        url "https://github.com/storytold/lightcraft/releases/download/v0.7.1/lightcraft-cli-0.7.1-macos-universal.zip"
-        sha256 "0b87e0d29bd828de9eab31a527d18f4702fdfd2db53fb594849c12d07e865758"
+        url "https://github.com/storytold/lightcraft/releases/download/v0.8.0/lightcraft-cli-0.8.0-macos-universal.zip"
+        sha256 "e6734be20cb0cfc714d872b37a33c9c945c5a09f22f4c441c09facef8fcbbce0"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/lightcraft/releases/download/v0.7.1/lightcraft-0.7.1-linux-aarch64.tar.gz"
-            sha256 "26de6212cd6a13d5d2ca758e0cf6b12b1bbf00b94834520992cee516481174a2"
+            url "https://github.com/storytold/lightcraft/releases/download/v0.8.0/lightcraft-0.8.0-linux-aarch64.tar.gz"
+            sha256 "ce563498ee01c16ba94520c823123e18c2e6d846edc58e7d1a0475828181c1c3"
         else
-            url "https://github.com/storytold/lightcraft/releases/download/v0.7.1/lightcraft-0.7.1-linux-x86_64.tar.gz"
-            sha256 "842881f5ad16502df11eeef4c28e5dcf2c5d66b7d4d838af7179a3fd2e0cb6c0"
+            url "https://github.com/storytold/lightcraft/releases/download/v0.8.0/lightcraft-0.8.0-linux-x86_64.tar.gz"
+            sha256 "9fe0ecc69b7f1f3a35a1c630429b3c52fdb4419ba208b5579b4501b938f518d1"
         end
     end
 
     def install
         if OS.mac?
-            # macOS zip extracts to lightcraft-cli-0.7.1-macos-universal/; install just the binary.
-            bin.install "lightcraft-cli-0.7.1-macos-universal/#{name}"
+            # macOS zip extracts to lightcraft-cli-0.8.0-macos-universal/; install just the binary.
+            bin.install "lightcraft-cli-0.8.0-macos-universal/#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "lightcraft-0.7.1-linux-aarch64/bin/#{name}"
+            bin.install "lightcraft-0.8.0-linux-aarch64/bin/#{name}"
         else
-            bin.install "lightcraft-0.7.1-linux-x86_64/bin/#{name}"
+            bin.install "lightcraft-0.8.0-linux-x86_64/bin/#{name}"
         end
     end
 
