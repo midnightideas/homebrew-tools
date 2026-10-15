@@ -20,12 +20,11 @@ class WordcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to wordcraft-cli-0.7.0-macos-universal/; install just the binary.
-            bin.install "wordcraft-cli-0.7.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "wordcraft-0.7.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "wordcraft-0.7.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
