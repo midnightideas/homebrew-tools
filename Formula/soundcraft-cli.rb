@@ -1,32 +1,31 @@
 class SoundcraftCli < Formula
     desc "Pro Tools-style digital audio workstation (CLI)."
     homepage "https://github.com/storytold/soundcraft"
-    name "SoundCraft CLI"
-    version "0.6.1"
+    version "0.7.0"
 
     on_macos do
-        url "https://github.com/storytold/soundcraft/releases/download/v0.6.1/soundcraft-cli-0.6.1-macos-universal.zip"
-        sha256 "bcc363a3f7799e3636494d0c9938a403428fa6372798341938f460a022c25c4f"
+        url "https://github.com/storytold/soundcraft/releases/download/v0.7.0/soundcraft-cli-0.7.0-macos-universal.zip"
+        sha256 "a4272112e9ab6e489cfab1b169741f70a5fc151ce1c1b2300cd92d66fa6f9d3d"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/soundcraft/releases/download/v0.6.1/soundcraft-0.6.1-linux-aarch64.tar.gz"
-            sha256 "55a18458670f1723edc8ba45da01f3dd8b85feba7cc3f83d44e7038120245ca4"
+            url "https://github.com/storytold/soundcraft/releases/download/v0.7.0/soundcraft-0.7.0-linux-aarch64.tar.gz"
+            sha256 "5b5152464bd6a3ae6c48be026d80e0c4e0da58d581a45fe4b5803d6fcfbbe006"
         else
-            url "https://github.com/storytold/soundcraft/releases/download/v0.6.1/soundcraft-0.6.1-linux-x86_64.tar.gz"
-            sha256 "f3bfa3735146e4d7b12cd8363b8fe77bbeff31ee95392295033f50b1916efcee"
+            url "https://github.com/storytold/soundcraft/releases/download/v0.7.0/soundcraft-0.7.0-linux-x86_64.tar.gz"
+            sha256 "8d7afbe5fe433cb338b7ccee0820285d6ce1bfc8c006d551ca8840c27a911ab2"
         end
     end
 
     def install
         if OS.mac?
-            # macOS zip extracts to soundcraft-cli-0.6.1-macos-universal/; install just the binary.
-            bin.install "soundcraft-cli-0.6.1-macos-universal/#{name}"
+            # macOS zip extracts to soundcraft-cli-0.7.0-macos-universal/; install just the binary.
+            bin.install "soundcraft-cli-0.7.0-macos-universal/#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "soundcraft-0.6.1-linux-aarch64/bin/#{name}"
+            bin.install "soundcraft-0.7.0-linux-aarch64/bin/#{name}"
         else
-            bin.install "soundcraft-0.6.1-linux-x86_64/bin/#{name}"
+            bin.install "soundcraft-0.7.0-linux-x86_64/bin/#{name}"
         end
     end
 
