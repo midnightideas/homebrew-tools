@@ -20,12 +20,11 @@ class LightcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to lightcraft-cli-0.8.0-macos-universal/; install just the binary.
-            bin.install "lightcraft-cli-0.8.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "lightcraft-0.8.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "lightcraft-0.8.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
