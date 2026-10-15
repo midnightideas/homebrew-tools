@@ -20,12 +20,11 @@ class FilmcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to filmcraft-cli-0.8.0-macos-universal/; install just the binary.
-            bin.install "filmcraft-cli-0.8.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "filmcraft-0.8.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "filmcraft-0.8.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
