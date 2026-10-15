@@ -1,32 +1,31 @@
 class PhotocraftCli < Formula
     desc "Photoshop-style raster image editor (CLI)."
     homepage "https://github.com/storytold/photocraft"
-    name "PhotoCraft CLI"
-    version "0.8.2"
+    version "0.9.0"
 
     on_macos do
-        url "https://github.com/storytold/photocraft/releases/download/v0.8.2/photocraft-cli-0.8.2-macos-universal.zip"
-        sha256 "38fd0463f20bc6600aac75ad5e9dd5ec4c35ef23b1dd86ea18a390580c074eac"
+        url "https://github.com/storytold/photocraft/releases/download/v0.9.0/photocraft-cli-0.9.0-macos-universal.zip"
+        sha256 "eaa662e0eef8f1aa27fa7c4aebdc242f6e2834f1eef62eb2589ddadede128982"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/photocraft/releases/download/v0.8.2/photocraft-0.8.2-linux-aarch64.tar.gz"
-            sha256 "f3920f31406574d1d3f9ca152d46703c8e7f3b504e0d2b2e394f0ad10f0df348"
+            url "https://github.com/storytold/photocraft/releases/download/v0.9.0/photocraft-0.9.0-linux-aarch64.tar.gz"
+            sha256 "c956084444653142dd25274cff08dbc17e8bf99815380db7f64eec026e882fc7"
         else
-            url "https://github.com/storytold/photocraft/releases/download/v0.8.2/photocraft-0.8.2-linux-x86_64.tar.gz"
-            sha256 "16c3089976eee2d290dbe73986db4835c1ec5a043c5c16b017b24848ff5ea827"
+            url "https://github.com/storytold/photocraft/releases/download/v0.9.0/photocraft-0.9.0-linux-x86_64.tar.gz"
+            sha256 "91300c1485ad710839604b085531c90e77ac7ebdb2a30259309ad74afcfdb90d"
         end
     end
 
     def install
         if OS.mac?
-            # macOS zip extracts to photocraft-cli-0.8.2-macos-universal/; install just the binary.
-            bin.install "photocraft-cli-0.8.2-macos-universal/#{name}"
+            # macOS zip extracts to photocraft-cli-0.9.0-macos-universal/; install just the binary.
+            bin.install "photocraft-cli-0.9.0-macos-universal/#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "photocraft-0.8.2-linux-aarch64/bin/#{name}"
+            bin.install "photocraft-0.9.0-linux-aarch64/bin/#{name}"
         else
-            bin.install "photocraft-0.8.2-linux-x86_64/bin/#{name}"
+            bin.install "photocraft-0.9.0-linux-x86_64/bin/#{name}"
         end
     end
 
