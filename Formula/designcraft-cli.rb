@@ -20,12 +20,11 @@ class DesigncraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to designcraft-cli-0.8.0-macos-universal/; install just the binary.
-            bin.install "designcraft-cli-0.8.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "designcraft-0.8.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "designcraft-0.8.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
