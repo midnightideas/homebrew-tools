@@ -21,11 +21,16 @@ class PdfcraftCli < Formula
     def install
         if OS.mac?
             # macOS zip extracts to pdfcraft-cli-0.8.0-macos-universal/; install just the binary.
-            bin.install "pdfcraft-cli-0.8.0-macos-universal/#{name}"
+            # buildpath/ makes the path absolute so bin.install works
+            # regardless of CWD during def install (Homebrew 7.0.9 + macOS
+            # 27.2 don't chdir to the staged dir, so a relative source
+            # path resolves to the wrong directory and Pathname.exist?
+            # raises ENOENT).
+            bin.install buildpath/"pdfcraft-cli-0.8.0-macos-universal/#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "pdfcraft-0.8.0-linux-aarch64/bin/#{name}"
+            bin.install buildpath/"pdfcraft-0.8.0-linux-aarch64/bin/#{name}"
         else
-            bin.install "pdfcraft-0.8.0-linux-x86_64/bin/#{name}"
+            bin.install buildpath/"pdfcraft-0.8.0-linux-x86_64/bin/#{name}"
         end
     end
 
