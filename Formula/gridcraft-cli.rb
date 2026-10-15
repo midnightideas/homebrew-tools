@@ -20,12 +20,11 @@ class GridcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to gridcraft-cli-0.7.0-macos-universal/; install just the binary.
-            bin.install "gridcraft-cli-0.7.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "gridcraft-0.7.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "gridcraft-0.7.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
