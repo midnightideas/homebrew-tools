@@ -1,32 +1,31 @@
 class WordcraftCli < Formula
     desc "Word-style word processor CLI for .docx files"
     homepage "https://github.com/storytold/wordcraft"
-    name "WordCraft CLI"
-    version "0.6.1"
+    version "0.7.0"
 
     on_macos do
-        url "https://github.com/storytold/wordcraft/releases/download/v0.6.1/wordcraft-cli-0.6.1-macos-universal.zip"
-        sha256 "58840293e40f845b56be90eef53169213c95d841cc078b94a78a225e4eff59e6"
+        url "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-cli-0.7.0-macos-universal.zip"
+        sha256 "56bda3406af0aa1c96cece8ad145ab2602d2f7f8919d758d4292c5c75f2dfb50"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/wordcraft/releases/download/v0.6.1/wordcraft-0.6.1-linux-aarch64.tar.gz"
-            sha256 "8d58f745d29fe17e8e5b4268e07553f140005b6986c27c6aa40b53f3cfb1e0f1"
+            url "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-0.7.0-linux-aarch64.tar.gz"
+            sha256 "b5fce7f31bbbf38828c1714d7d43244ae85f034bbe761dfa401e044f976ba45e"
         else
-            url "https://github.com/storytold/wordcraft/releases/download/v0.6.1/wordcraft-0.6.1-linux-x86_64.tar.gz"
-            sha256 "79bd54c81276f6ea551222432adec15e0eaab4cb5881decee38eafd7a5ca38f9"
+            url "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-0.7.0-linux-x86_64.tar.gz"
+            sha256 "63009f88e3dbaea70ac1378fabc8555ae14775d32829175c5da2551abe03932f"
         end
     end
 
     def install
         if OS.mac?
-            # macOS zip extracts to wordcraft-cli-0.6.1-macos-universal/; install just the binary.
-            bin.install "wordcraft-cli-0.6.1-macos-universal/#{name}"
+            # macOS zip extracts to wordcraft-cli-0.7.0-macos-universal/; install just the binary.
+            bin.install "wordcraft-cli-0.7.0-macos-universal/#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "wordcraft-0.6.1-linux-aarch64/bin/#{name}"
+            bin.install "wordcraft-0.7.0-linux-aarch64/bin/#{name}"
         else
-            bin.install "wordcraft-0.6.1-linux-x86_64/bin/#{name}"
+            bin.install "wordcraft-0.7.0-linux-x86_64/bin/#{name}"
         end
     end
 
