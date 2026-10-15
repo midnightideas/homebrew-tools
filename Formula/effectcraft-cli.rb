@@ -20,12 +20,11 @@ class EffectcraftCli < Formula
 
     def install
         if OS.mac?
-            # macOS zip extracts to effectcraft-cli-0.10.0-macos-universal/; install just the binary.
-            bin.install "effectcraft-cli-0.10.0-macos-universal/#{name}"
+            bin.install "#{name}"
         elsif Hardware::CPU.arm?
-            bin.install "effectcraft-0.10.0-linux-aarch64/bin/#{name}"
+            bin.install "bin/#{name}"
         else
-            bin.install "effectcraft-0.10.0-linux-x86_64/bin/#{name}"
+            bin.install "bin/#{name}"
         end
     end
 
