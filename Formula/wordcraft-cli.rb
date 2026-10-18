@@ -1,20 +1,20 @@
 class WordcraftCli < Formula
     desc "Word-style word processor CLI for .docx files"
     homepage "https://github.com/storytold/wordcraft"
-    version "0.7.0"
+    version "0.8.0"
 
     on_macos do
-        url "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-cli-0.7.0-macos-universal.zip"
-        sha256 "56bda3406af0aa1c96cece8ad145ab2602d2f7f8919d758d4292c5c75f2dfb50"
+        url "https://github.com/storytold/wordcraft/releases/download/v0.8.0/wordcraft-cli-0.8.0-macos-universal.zip"
+        sha256 "931f2277a357e7d77266ddceea565450b102ca7bf9e0634821162f7bab616dbe"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-0.7.0-linux-aarch64.tar.gz"
-            sha256 "b5fce7f31bbbf38828c1714d7d43244ae85f034bbe761dfa401e044f976ba45e"
+            url "https://github.com/storytold/wordcraft/releases/download/v0.8.0/wordcraft-0.8.0-linux-aarch64.tar.gz"
+            sha256 "a862de2256e43c987dc8ea009ba52ac25db34091fd649b666133931ac68e02cc"
         else
-            url "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-0.7.0-linux-x86_64.tar.gz"
-            sha256 "63009f88e3dbaea70ac1378fabc8555ae14775d32829175c5da2551abe03932f"
+            url "https://github.com/storytold/wordcraft/releases/download/v0.8.0/wordcraft-0.8.0-linux-x86_64.tar.gz"
+            sha256 "0ece07cf3d91b923dfd80f90310e04983bde66f0279c6b60ddce89596dde0ddf"
         end
     end
 
