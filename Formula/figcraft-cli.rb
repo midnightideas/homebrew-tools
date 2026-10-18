@@ -1,20 +1,20 @@
 class FigcraftCli < Formula
     desc "Figma-style collaborative design and prototyping tool (CLI)."
     homepage "https://github.com/storytold/figcraft"
-    version "0.6.0"
+    version "0.7.0"
 
     on_macos do
-        url "https://github.com/storytold/figcraft/releases/download/v0.6.0/figcraft-cli-0.6.0-macos-universal.zip"
-        sha256 "119446cc8f50b719dad7a73e0356de6194aa262b6520b362dfe310ee9f05b3be"
+        url "https://github.com/storytold/figcraft/releases/download/v0.7.0/figcraft-cli-0.7.0-macos-universal.zip"
+        sha256 "5e7bea01c9f33d13d2ad803dfd10b5f0b1815e124870db09391d1c360a58e893"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/figcraft/releases/download/v0.6.0/figcraft-0.6.0-linux-aarch64.tar.gz"
-            sha256 "1bb4c2364c8ac5133b52db14f6a1314d5802df1e0ee87e8fb8893ae7d5b635cb"
+            url "https://github.com/storytold/figcraft/releases/download/v0.7.0/figcraft-0.7.0-linux-aarch64.tar.gz"
+            sha256 "a70838b92fd3023513b87f8667e42f8adcac6344f01c68d3394d68b1d7916039"
         else
-            url "https://github.com/storytold/figcraft/releases/download/v0.6.0/figcraft-0.6.0-linux-x86_64.tar.gz"
-            sha256 "b66dfa68fa5ee54e275f9270168974d54cdbe8b1f431c8b0e962cb7b6baa0660"
+            url "https://github.com/storytold/figcraft/releases/download/v0.7.0/figcraft-0.7.0-linux-x86_64.tar.gz"
+            sha256 "f3ddf6194d2bbd523cd3195df90fa2cd5782d3946fc7833b7f6bf88fda37908d"
         end
     end
 
