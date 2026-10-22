@@ -1,19 +1,19 @@
 cask "soundcraft" do
-    version "0.10.0"
+    version "0.11.0"
 
     on_macos do
-        url "https://github.com/storytold/soundcraft/releases/download/v0.10.0/soundcraft-0.10.0-macos-universal.dmg"
-        sha256 "53b434d762b0a4d539e35428eb4838b03fd123e33bfb93dd6ddfdfb27489e4f8"
+        url "https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-0.11.0-macos-universal.dmg"
+        sha256 "36fc51acefb291f58e928e05077e33c7b4d01a8614278b2af8f377aebd7e61d1"
         app "SoundCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/soundcraft/releases/download/v0.10.0/soundcraft-0.10.0-linux-aarch64.AppImage"
-            sha256 "c3d5dd865636f09c7cd5663fe56e568ca2913bc079b34385215597c00d9ddd37"
+            url "https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-0.11.0-linux-aarch64.AppImage"
+            sha256 "0fa156a6c0af84d9b320cc586857a372a3f9febb23d4b183d6265d5655a0dadb"
         else
-            url "https://github.com/storytold/soundcraft/releases/download/v0.10.0/soundcraft-0.10.0-linux-x86_64.AppImage"
-            sha256 "27f78fb8a601635aa95c24e53c6db2f0320143e947d81a58f320b0d9c560abb9"
+            url "https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-0.11.0-linux-x86_64.AppImage"
+            sha256 "b68f8d17904a60841f7fe6dd164376970b41cc388d6b8041ad18226251f5bfbb"
         end
     end
 
