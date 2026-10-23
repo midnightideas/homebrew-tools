@@ -1,20 +1,20 @@
 class SoundcraftCli < Formula
     desc "Pro Tools-style digital audio workstation (CLI)."
     homepage "https://github.com/storytold/soundcraft"
-    version "0.11.0"
+    version "0.12.1"
 
     on_macos do
-        url "https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-cli-0.11.0-macos-universal.zip"
-        sha256 "6868fec480ea7d10638f277ebc8eb2fd6097b12b064a127f493d0522140eea01"
+        url "https://github.com/storytold/soundcraft/releases/download/v0.12.1/soundcraft-cli-0.12.1-macos-universal.zip"
+        sha256 "fda1f1abb6998629f10449516ee705439a668c88dd8b7b28b41be54bad7732e5"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-0.11.0-linux-aarch64.tar.gz"
-            sha256 "470dbf417913bb063d9022848b1cb14444bd4b1d8179ee74c736d555e8ff3f7e"
+            url "https://github.com/storytold/soundcraft/releases/download/v0.12.1/soundcraft-0.12.1-linux-aarch64.tar.gz"
+            sha256 "b16513d16be67a9715ec650db955ee6b41624db21fc182905ccaaa311547700d"
         else
-            url "https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-0.11.0-linux-x86_64.tar.gz"
-            sha256 "3f4b0368310f10400439b4da304862a7d463231cfc51d6057e1146962a2ffa35"
+            url "https://github.com/storytold/soundcraft/releases/download/v0.12.1/soundcraft-0.12.1-linux-x86_64.tar.gz"
+            sha256 "b0a56bd6b5d27de6b12e354580c362be6f59125ea58f573044c84f6a7da87780"
         end
     end
 
