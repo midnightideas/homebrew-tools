@@ -1,19 +1,19 @@
 cask "lightcraft" do
-    version "0.11.0"
+    version "0.13.0"
 
     on_macos do
-        url "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-macos-universal.dmg"
-        sha256 "09a0dd5a9d42e6b607ac57789d6a1b9cf8f58d9a670bb671df9ba7809f64e708"
+        url "https://github.com/storytold/lightcraft/releases/download/v0.13.0/lightcraft-0.13.0-macos-universal.dmg"
+        sha256 "9a1a9b5d8e9af96101d3299650d014d094c51d8ea8fe5e39bae83fa5a9189de0"
         app "LightCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-aarch64.AppImage"
-            sha256 "26f776a50c6928429af74db2cf751d36673a19b7fad8baed324e1cb8be1812bd"
+            url "https://github.com/storytold/lightcraft/releases/download/v0.13.0/lightcraft-0.13.0-linux-aarch64.AppImage"
+            sha256 "46f12993371118f4158c4b19ff6f01e1ffdc2cf8049bea2dd9e36f8185333382"
         else
-            url "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-x86_64.AppImage"
-            sha256 "3a1ea99e4a806a5bab7fad7ea6744d467275fa13fce2247161808a2b430e78aa"
+            url "https://github.com/storytold/lightcraft/releases/download/v0.13.0/lightcraft-0.13.0-linux-x86_64.AppImage"
+            sha256 "07ef0c639bd211c1cba252e6803953c1d99462f55b561d30bf9bd7ac4a4e7d7b"
         end
     end
 
