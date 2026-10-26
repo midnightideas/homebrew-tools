@@ -1,20 +1,20 @@
 class VectorcraftCli < Formula
     desc "Illustrator-style vector editor (CLI)."
     homepage "https://github.com/storytold/vectorcraft"
-    version "0.16.0"
+    version "0.17.0"
 
     on_macos do
-        url "https://github.com/storytold/vectorcraft/releases/download/v0.16.0/vectorcraft-cli-0.16.0-macos-universal.zip"
-        sha256 "f68c204642c598ab76e51a773f6aa80e3ff0ed303c78fdf4c36c4dfbad2a76f6"
+        url "https://github.com/storytold/vectorcraft/releases/download/v0.17.0/vectorcraft-cli-0.17.0-macos-universal.zip"
+        sha256 "dee6d447c42615662ea81a612fedd0c221b14ac51dbe72e45f3d435fdc511641"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/vectorcraft/releases/download/v0.16.0/vectorcraft-0.16.0-linux-aarch64.tar.gz"
-            sha256 "7a624f47c20c10e4a8c07bba90e30f3da2ff26e5653632f942c7c5404105d02e"
+            url "https://github.com/storytold/vectorcraft/releases/download/v0.17.0/vectorcraft-0.17.0-linux-aarch64.tar.gz"
+            sha256 "28cbc71ced0b4349b2d4208f0f2f922c13ec099627a323b0eb3d5e1b1372dca3"
         else
-            url "https://github.com/storytold/vectorcraft/releases/download/v0.16.0/vectorcraft-0.16.0-linux-x86_64.tar.gz"
-            sha256 "651fac17255271ad1dbc8ba1e8287db9f28e529ba9a14dd0383eca93a2cc5aa6"
+            url "https://github.com/storytold/vectorcraft/releases/download/v0.17.0/vectorcraft-0.17.0-linux-x86_64.tar.gz"
+            sha256 "66c289d0bd354b71e4cd787193ea0481e3a1cd239f2a18068110ea36852fc026"
         end
     end
 
