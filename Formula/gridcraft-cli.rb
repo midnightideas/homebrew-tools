@@ -1,20 +1,20 @@
 class GridcraftCli < Formula
     desc "Excel-style spreadsheet application (CLI)."
     homepage "https://github.com/storytold/gridcraft"
-    version "0.11.1"
+    version "0.12.1"
 
     on_macos do
-        url "https://github.com/storytold/gridcraft/releases/download/v0.11.1/gridcraft-cli-0.11.1-macos-universal.zip"
-        sha256 "5a1bde181fc38e09e3c3661c33d6b8e924032dc0950de2ba236913294ed3a653"
+        url "https://github.com/storytold/gridcraft/releases/download/v0.12.1/gridcraft-cli-0.12.1-macos-universal.zip"
+        sha256 "23a0b7b4c2bcb92fb9ba2967d0b50608d98f731601ef653ade645d010f1215ea"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/gridcraft/releases/download/v0.11.1/gridcraft-0.11.1-linux-aarch64.tar.gz"
-            sha256 "16e4da4873867a9080ec41d76e38430a8d0e62fa22b43edb6d7b1dbde0925435"
+            url "https://github.com/storytold/gridcraft/releases/download/v0.12.1/gridcraft-0.12.1-linux-aarch64.tar.gz"
+            sha256 "65465f9077fa1490bc6835515ed7dfbc562b5dfe417493c6c1c07838b149ffab"
         else
-            url "https://github.com/storytold/gridcraft/releases/download/v0.11.1/gridcraft-0.11.1-linux-x86_64.tar.gz"
-            sha256 "f2c83e6c26449a6c45983e903bf32c1d4c302b2042f263ead995271129c70e87"
+            url "https://github.com/storytold/gridcraft/releases/download/v0.12.1/gridcraft-0.12.1-linux-x86_64.tar.gz"
+            sha256 "1c1750dd6d26376cf8c8af22b46dc0ed3d8d5cbb115e555f0fc7d0cf7a9aea9a"
         end
     end
 
