@@ -1,20 +1,20 @@
 class DesigncraftCli < Formula
     desc "InDesign-style page layout application (CLI)."
     homepage "https://github.com/storytold/designcraft"
-    version "0.12.0"
+    version "0.13.0"
 
     on_macos do
-        url "https://github.com/storytold/designcraft/releases/download/v0.12.0/designcraft-cli-0.12.0-macos-universal.zip"
-        sha256 "3a8ebebf03ded56a5b5128f80ec7859351adad94fd8964fd7991acf648a0cd7c"
+        url "https://github.com/storytold/designcraft/releases/download/v0.13.0/designcraft-cli-0.13.0-macos-universal.zip"
+        sha256 "ba49dc1699ed98f27ef8e9336a24a011f086f3d1a46c6f069c2791bf796de960"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/designcraft/releases/download/v0.12.0/designcraft-0.12.0-linux-aarch64.tar.gz"
-            sha256 "eb055f655ab26a137d5e46d63c6d7d91683148814766224a36de73ecbff7a6b3"
+            url "https://github.com/storytold/designcraft/releases/download/v0.13.0/designcraft-0.13.0-linux-aarch64.tar.gz"
+            sha256 "6d75213f93c0db35edf88d84b8ab1382be413f87aca5bdbce88d3485e774d8f5"
         else
-            url "https://github.com/storytold/designcraft/releases/download/v0.12.0/designcraft-0.12.0-linux-x86_64.tar.gz"
-            sha256 "0e7bbe349670f8d5eb178fa9bd4a1bf1c7c51d6a54e1b802b8dcdbb2ae68fe1d"
+            url "https://github.com/storytold/designcraft/releases/download/v0.13.0/designcraft-0.13.0-linux-x86_64.tar.gz"
+            sha256 "5314d46bc520cf54835a2d1293351be1fed116228e055393019729f04e0f99c2"
         end
     end
 
