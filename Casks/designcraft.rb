@@ -1,19 +1,19 @@
 cask "designcraft" do
-    version "0.13.0"
+    version "0.14.0"
 
     on_macos do
-        url "https://github.com/storytold/designcraft/releases/download/v0.13.0/designcraft-0.13.0-macos-universal.dmg"
-        sha256 "14d020b90df9178de290d624e012bdceb353b1595ff5b7991d4896b8f42ea03b"
+        url "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-macos-universal.dmg"
+        sha256 "9392fb563de06da2eca48791a40f812f721103697362015659b3ff7577e7b081"
         app "DesignCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/designcraft/releases/download/v0.13.0/designcraft-0.13.0-linux-aarch64.AppImage"
-            sha256 "8adb8671fd3c5f02551d6a54b83c2fa85b2333a45cd2d017d68d5ad782d0c299"
+            url "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-linux-aarch64.AppImage"
+            sha256 "aa342edb6543487290e81a63d61fd3c31fc038875f77e2c786d84419cb45d045"
         else
-            url "https://github.com/storytold/designcraft/releases/download/v0.13.0/designcraft-0.13.0-linux-x86_64.AppImage"
-            sha256 "8d7661b98f6434d5c65e5cd2c7699d4af6a88d104598c48dcb09bfae05f6c62f"
+            url "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-linux-x86_64.AppImage"
+            sha256 "c7b9a4b760e4c94b05fde4cd1c266823a736bc3fa507150cff0dc1920edfc28e"
         end
     end
 
