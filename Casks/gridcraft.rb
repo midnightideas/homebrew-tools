@@ -1,19 +1,19 @@
 cask "gridcraft" do
-    version "0.12.1"
+    version "0.13.0"
 
     on_macos do
-        url "https://github.com/storytold/gridcraft/releases/download/v0.12.1/gridcraft-0.12.1-macos-universal.dmg"
-        sha256 "ee234f51e2e747dcf278fde984c86218fdfe2ff7188c01b699394fcaef4033be"
+        url "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-macos-universal.dmg"
+        sha256 "67b6a023b465edf85ef5a309d49a6b00a085e3ea3dc9dddc0060996b38515168"
         app "GridCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/gridcraft/releases/download/v0.12.1/gridcraft-0.12.1-linux-aarch64.AppImage"
-            sha256 "6f89438cc1b340197cf9dcc3506961c2dabc1e0a797213c997fa51b0156f4b46"
+            url "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-linux-aarch64.AppImage"
+            sha256 "33f3d28a237bea204203ef0576f835facfa7e10910ce502886bf8f5b434cbb7b"
         else
-            url "https://github.com/storytold/gridcraft/releases/download/v0.12.1/gridcraft-0.12.1-linux-x86_64.AppImage"
-            sha256 "eb2de0401e1089d6f76c07b884b82d71c44e7455efae2014cc347a8a0c9f1277"
+            url "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-linux-x86_64.AppImage"
+            sha256 "2a87c3794cb2a7d0242a51c7695883b8beae51a7c5fac589a7d58dde1958b385"
         end
     end
 
