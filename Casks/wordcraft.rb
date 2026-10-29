@@ -1,19 +1,19 @@
 cask "wordcraft" do
-    version "0.11.0"
+    version "0.12.0"
 
     on_macos do
-        url "https://github.com/storytold/wordcraft/releases/download/v0.11.0/wordcraft-0.11.0-macos-universal.dmg"
-        sha256 "0e2030b27157a42be151a28bae03a11589c08404d166d55d6d0bdded65b0d22b"
+        url "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-macos-universal.dmg"
+        sha256 "2444eb9ca2755f4655c55e97d9de63876f338a1588ab35e912ac76f38cea7709"
         app "WordCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/wordcraft/releases/download/v0.11.0/wordcraft-0.11.0-linux-aarch64.AppImage"
-            sha256 "d5af2e9f69730896283ba6c68beb760369364547101e5cf659e2c9c74fbba9c6"
+            url "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-linux-aarch64.AppImage"
+            sha256 "4b01993f624eddfc90fab8a75ca93b9d3c22427597f0338044d11ba7efb61cc5"
         else
-            url "https://github.com/storytold/wordcraft/releases/download/v0.11.0/wordcraft-0.11.0-linux-x86_64.AppImage"
-            sha256 "d92d5d37752b95f08904cc8328f3a73c2979361337ff260d23518f4024cd5c64"
+            url "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-linux-x86_64.AppImage"
+            sha256 "d0730024db6c969e79ebaa9cc9abcdfbb198ea9b29c9bd0a2a04f9834e7656cb"
         end
     end
 
