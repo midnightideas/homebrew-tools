@@ -1,20 +1,20 @@
 class PdfcraftCli < Formula
     desc "Acrobat-style PDF viewer and editor (CLI)."
     homepage "https://github.com/storytold/pdfcraft"
-    version "0.15.0"
+    version "0.16.1"
 
     on_macos do
-        url "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-cli-0.15.0-macos-universal.zip"
-        sha256 "0304db20f3597e4e9ad3044d67f79cb89bdad49833c6ad7a60c0d0d6a7afaa50"
+        url "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-cli-0.16.1-macos-universal.zip"
+        sha256 "c12d83c4a805171e1d19b6aec79d4272239cd6a67ec9e7efba2943d9fbe3c39c"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-linux-aarch64.tar.gz"
-            sha256 "b380bc7a4c28d05d7ea95eb23085ca322c49ca1a21b8bb79389a8e083ae92b9d"
+            url "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-aarch64.tar.gz"
+            sha256 "2908e9127bf80f0bf889bd4c292980bc06e47f74999a5bf6dd09357e6f4e58a4"
         else
-            url "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-linux-x86_64.tar.gz"
-            sha256 "b167a18c60a7b329f05a5bbf97e32dc678aad3f8d5866d8e4378ff24273f8313"
+            url "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-x86_64.tar.gz"
+            sha256 "bb36e071d10a14af5121299a0eed8d7c5db8e5c7580b6cbebec085c41d1bfe0a"
         end
     end
 
