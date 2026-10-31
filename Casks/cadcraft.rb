@@ -1,19 +1,19 @@
 cask "cadcraft" do
-    version "0.14.0"
+    version "0.15.1"
 
     on_macos do
-        url "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-macos-universal.dmg"
-        sha256 "05aae1cc33745c0cd4171e74e05971d625b29884bb49e007031a42ae1adc02d2"
+        url "https://github.com/storytold/cadcraft/releases/download/v0.15.1/cadcraft-0.15.1-macos-universal.dmg"
+        sha256 "4393e64928f8a7de65be85b5e70980f96bc03763661fd0e35471221e7322b98e"
         app "CADCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-linux-aarch64.AppImage"
-            sha256 "1c09e2f8db7bbe6b709d0a5eca607e753fcb266b54e8fa83b7e7c03f9ac94bfc"
+            url "https://github.com/storytold/cadcraft/releases/download/v0.15.1/cadcraft-0.15.1-linux-aarch64.AppImage"
+            sha256 "b607b93d3eb923af5cb3bb6e7b08a915c5123263e8e13cd64b02f50e43e657e4"
         else
-            url "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-linux-x86_64.AppImage"
-            sha256 "d054e5769ee18134698d0773476871cadd89491a91523c3eb258a82626bb99e7"
+            url "https://github.com/storytold/cadcraft/releases/download/v0.15.1/cadcraft-0.15.1-linux-x86_64.AppImage"
+            sha256 "88ae616958413b8fa56259df6f70fb695ab90b472e4c63cf955ae6a6471bb11d"
         end
     end
 
