@@ -1,19 +1,19 @@
 cask "filmcraft" do
-    version "0.15.0"
+    version "0.16.0"
 
     on_macos do
-        url "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-macos-universal.dmg"
-        sha256 "a38a40516eb60d6a24741b09f1ec2c763bb40e01eca1af11fd6de0bc53a38bf4"
+        url "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-macos-universal.dmg"
+        sha256 "2d7aa2fbde8266e755b4e2573566738bcffba5c01d7d760045971f17d84b5ffc"
         app "FilmCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-aarch64.AppImage"
-            sha256 "93beed6c51382180a0c4497be84a5249eb26efe9a3968df6919a0ebdd025d26c"
+            url "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-aarch64.AppImage"
+            sha256 "c016e2e550dede376ca1d5f1520a7fd04de3fdfa88561e8502fb0118ccb2dd01"
         else
-            url "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-x86_64.AppImage"
-            sha256 "4bcb119c1aa60df54ce3338d7aa48e3f14d61569f7bc63851a00bdc89249647b"
+            url "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-x86_64.AppImage"
+            sha256 "c2be1b654a6df980870213901785656075247e4e8e530545a97886dec4a2f050"
         end
     end
 
