@@ -1,20 +1,20 @@
 class EffectcraftCli < Formula
     desc "After Effects-style motion graphics and compositing (CLI)."
     homepage "https://github.com/storytold/effectcraft"
-    version "0.19.0"
+    version "0.20.0"
 
     on_macos do
-        url "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-cli-0.19.0-macos-universal.zip"
-        sha256 "6212496ea0f208225ff09385e6d4ac95275be679b6ef61844040d9760bba13ba"
+        url "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-cli-0.20.0-macos-universal.zip"
+        sha256 "adc713ed5049983bec00c651f307e122074ac542ca48e6a43011dfbfb0f10e16"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-aarch64.tar.gz"
-            sha256 "925737425d273b9445c3864b4dcba11726da88657cab20c2eb616920b27efac6"
+            url "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-aarch64.tar.gz"
+            sha256 "cdc1fcbb8cc20cba328b8b79db69f7df459be32c75187ac05ae2138fe4b42050"
         else
-            url "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-x86_64.tar.gz"
-            sha256 "7ec9391dae775f7ce7e7291268f7b1233228c1bade83ced8840303535c951970"
+            url "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-x86_64.tar.gz"
+            sha256 "2573100a0a2ce07a69257bda7fa6a7d5252d3b4d32dfef3a1f6d2c95bcb8da23"
         end
     end
 
