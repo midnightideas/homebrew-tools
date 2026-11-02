@@ -1,19 +1,19 @@
 cask "figcraft" do
-    version "0.13.1"
+    version "0.14.0"
 
     on_macos do
-        url "https://github.com/storytold/figcraft/releases/download/v0.13.1/figcraft-0.13.1-macos-universal.dmg"
-        sha256 "87a2d8bbc06c09bfb50541269769943d7ef2498425310615f0c749741d54259d"
+        url "https://github.com/storytold/figcraft/releases/download/v0.14.0/figcraft-0.14.0-macos-universal.dmg"
+        sha256 "e80f7fce009b76d5565d5bb9e4e5f0b88c7c3d94675eccaff52f2640e6bbaad5"
         app "FigCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/figcraft/releases/download/v0.13.1/figcraft-0.13.1-linux-aarch64.AppImage"
-            sha256 "1e9de7d57b2f313354dddf8ea98b3fd5f03bfcb30ce7c2cf38efc65c78f895ad"
+            url "https://github.com/storytold/figcraft/releases/download/v0.14.0/figcraft-0.14.0-linux-aarch64.AppImage"
+            sha256 "edd95036ab7168e3f07b19463bad5cf4b433ee279bd4e28a15414b5f2d677df6"
         else
-            url "https://github.com/storytold/figcraft/releases/download/v0.13.1/figcraft-0.13.1-linux-x86_64.AppImage"
-            sha256 "2fa44efdf4878dea7eb79b1227f274bccb298aab6431d78d0e8370ea6c125474"
+            url "https://github.com/storytold/figcraft/releases/download/v0.14.0/figcraft-0.14.0-linux-x86_64.AppImage"
+            sha256 "8f5318f1000b4f7e3a77895e8c5db0361d56306ac2bc13e60b2d2369a2d0db47"
         end
     end
 
