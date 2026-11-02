@@ -1,20 +1,20 @@
 class CadcraftCli < Formula
     desc "AutoCAD-style 2D/3D CAD application (CLI)."
     homepage "https://github.com/storytold/cadcraft"
-    version "0.15.1"
+    version "0.16.0"
 
     on_macos do
-        url "https://github.com/storytold/cadcraft/releases/download/v0.15.1/cadcraft-cli-0.15.1-macos-universal.zip"
-        sha256 "289f8bde2651cb29bf21951c189e4f60d92da53d03ee65c41fbbaf5da30f554e"
+        url "https://github.com/storytold/cadcraft/releases/download/v0.16.0/cadcraft-cli-0.16.0-macos-universal.zip"
+        sha256 "bcf18369e36eaa409a2d4d67fd30eb889713bc08b9e7a30ba1967c974d1d556d"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/cadcraft/releases/download/v0.15.1/cadcraft-0.15.1-linux-aarch64.tar.gz"
-            sha256 "8fb84e925323c4fdf217fd0a46228ea14244cc6dbe49a9385b030c8aab3b17e2"
+            url "https://github.com/storytold/cadcraft/releases/download/v0.16.0/cadcraft-0.16.0-linux-aarch64.tar.gz"
+            sha256 "33876da3091d66988cfac198a467b3e18e7bc91c0052e36416e886a3db1896db"
         else
-            url "https://github.com/storytold/cadcraft/releases/download/v0.15.1/cadcraft-0.15.1-linux-x86_64.tar.gz"
-            sha256 "d044f0f8a755c6b69bdc6b45361dabcc342c14e3b1919c39f54069ffcd1c4f80"
+            url "https://github.com/storytold/cadcraft/releases/download/v0.16.0/cadcraft-0.16.0-linux-x86_64.tar.gz"
+            sha256 "149820b3d0e1e729a2256e344523b9805871d39ee39c9e085f507707f73ccbd4"
         end
     end
 
