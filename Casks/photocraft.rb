@@ -1,19 +1,19 @@
 cask "photocraft" do
-    version "0.19.0"
+    version "0.20.1"
 
     on_macos do
-        url "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-macos-universal.dmg"
-        sha256 "4024b531f14cc96c3d3e33dcc5e12c4b5114d219a01323d0173fd534459fd368"
+        url "https://github.com/storytold/photocraft/releases/download/v0.20.1/photocraft-0.20.1-macos-universal.dmg"
+        sha256 "5486555dc749df1650f321e363534e603a7c4f80ea31c54d9e88489ff742db03"
         app "PhotoCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-aarch64.AppImage"
-            sha256 "755d7aa07c966995caf154fedca5dee0c1cbc8f5c7c2679c67a8be6d6467322d"
+            url "https://github.com/storytold/photocraft/releases/download/v0.20.1/photocraft-0.20.1-linux-aarch64.AppImage"
+            sha256 "02f65fad7ff7585191751df73a0d0a1364e0c3f1fbcf5e5458993792cdf410d5"
         else
-            url "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-x86_64.AppImage"
-            sha256 "0cd30b366d40090aba01b0a1fe021bdcfc02b11ff9151c7aaced5b663db9b856"
+            url "https://github.com/storytold/photocraft/releases/download/v0.20.1/photocraft-0.20.1-linux-x86_64.AppImage"
+            sha256 "d7c605fd05ea2334e2771e1358fe4d900dbbff14f02d766070c141e2e3ad4bbf"
         end
     end
 
