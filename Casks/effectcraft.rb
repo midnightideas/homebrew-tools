@@ -1,19 +1,19 @@
 cask "effectcraft" do
-    version "0.20.0"
+    version "0.21.0"
 
     on_macos do
-        url "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-macos-universal.dmg"
-        sha256 "d603a803e3edc0a8b440c5fbcd2caf9b775f85305100090d3ad2e4c04a98bac1"
+        url "https://github.com/storytold/effectcraft/releases/download/v0.21.0/effectcraft-0.21.0-macos-universal.dmg"
+        sha256 "edf311ed25b75da1793c808a37336e00a353e733d657f64eddc35f0999b66966"
         app "EffectCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-aarch64.AppImage"
-            sha256 "021946631486a7970db824b515a275ee95be3edb584f9aeef986e36171c29cdb"
+            url "https://github.com/storytold/effectcraft/releases/download/v0.21.0/effectcraft-0.21.0-linux-aarch64.AppImage"
+            sha256 "dd5b7598affdbb12195057e6c2c7dc9bf12214af5ae9984db21feb7d8daa32b6"
         else
-            url "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-x86_64.AppImage"
-            sha256 "6ccada9ca8b54114b79f7b99c33a515a3e4b54a9baba43eb434e885e4db5a5f7"
+            url "https://github.com/storytold/effectcraft/releases/download/v0.21.0/effectcraft-0.21.0-linux-x86_64.AppImage"
+            sha256 "fb19e41e3a3dd2878b03d3504f75ab616c527fa75428491b6016d46789fd9f20"
         end
     end
 
