@@ -1,19 +1,19 @@
 cask "pdfcraft" do
-    version "0.18.0"
+    version "0.18.1"
 
     on_macos do
-        url "https://github.com/storytold/pdfcraft/releases/download/v0.18.0/pdfcraft-0.18.0-macos-universal.dmg"
-        sha256 "2c7be0e8300e3bad93ccd390eae16ec342bcd935b12dc282fda3f0589bc7ce72"
+        url "https://github.com/storytold/pdfcraft/releases/download/v0.18.1/pdfcraft-0.18.1-macos-universal.dmg"
+        sha256 "55f84be56388d69f24df22522f6d424f8d8e69529db669ce08ea198455e08ceb"
         app "PdfCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/pdfcraft/releases/download/v0.18.0/pdfcraft-0.18.0-linux-aarch64.AppImage"
-            sha256 "35dea042a84a0818de2e7611cf24b937d96b64604c0cd7688c0e1841ab34b338"
+            url "https://github.com/storytold/pdfcraft/releases/download/v0.18.1/pdfcraft-0.18.1-linux-aarch64.AppImage"
+            sha256 "8f30be4362ba5119f6388f948b0b88386977568736ffc8961cf2ceee0b41b2d4"
         else
-            url "https://github.com/storytold/pdfcraft/releases/download/v0.18.0/pdfcraft-0.18.0-linux-x86_64.AppImage"
-            sha256 "3fd477e32f20680cf0c2d986425f783a171788869be90be556e5878b5b2318bf"
+            url "https://github.com/storytold/pdfcraft/releases/download/v0.18.1/pdfcraft-0.18.1-linux-x86_64.AppImage"
+            sha256 "4ce61a8f4f1374591e7468f07a47be542594c1e31d660d9a5d539ddbe85010c6"
         end
     end
 
