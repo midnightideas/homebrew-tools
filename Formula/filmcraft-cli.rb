@@ -1,20 +1,20 @@
 class FilmcraftCli < Formula
     desc "Premiere-style non-linear video editor (CLI)."
     homepage "https://github.com/storytold/filmcraft"
-    version "0.17.0"
+    version "0.17.1"
 
     on_macos do
-        url "https://github.com/storytold/filmcraft/releases/download/v0.17.0/filmcraft-cli-0.17.0-macos-universal.zip"
-        sha256 "338a4042e235030af22d0a1039a4e463e325cf06a0970e1db6f0cb612a82b4d0"
+        url "https://github.com/storytold/filmcraft/releases/download/v0.17.1/filmcraft-cli-0.17.1-macos-universal.zip"
+        sha256 "ca0749fecd44c51caee419d90938d24ce322340d7af1d1660605166f1ecd2755"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/filmcraft/releases/download/v0.17.0/filmcraft-0.17.0-linux-aarch64.tar.gz"
-            sha256 "f1146274e49488ae8ab855c075e16e0bc47fe910c6291272e613df802cf1a853"
+            url "https://github.com/storytold/filmcraft/releases/download/v0.17.1/filmcraft-0.17.1-linux-aarch64.tar.gz"
+            sha256 "225d6d815fad8cdfb720b5ce382196b60edd6ee10a9216660bcdabb28beaaa95"
         else
-            url "https://github.com/storytold/filmcraft/releases/download/v0.17.0/filmcraft-0.17.0-linux-x86_64.tar.gz"
-            sha256 "df3f8ab23481a28eefb7c9fd8d3899fbd94bb143e197068b4613fe050297bfbf"
+            url "https://github.com/storytold/filmcraft/releases/download/v0.17.1/filmcraft-0.17.1-linux-x86_64.tar.gz"
+            sha256 "397ae9fece559b37863b4b076af46a63b6e4387c35f781709e4efad14fe71ebe"
         end
     end
 
