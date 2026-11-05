@@ -1,20 +1,20 @@
 class LightcraftCli < Formula
     desc "Lightroom-style photo library and raw development (CLI)."
     homepage "https://github.com/storytold/lightcraft"
-    version "0.18.0"
+    version "0.18.1"
 
     on_macos do
-        url "https://github.com/storytold/lightcraft/releases/download/v0.18.0/lightcraft-cli-0.18.0-macos-universal.zip"
-        sha256 "b38631b85a9b4b822db462339a6ba88344dc7768ea1614cb195cbdc9d8a95e75"
+        url "https://github.com/storytold/lightcraft/releases/download/v0.18.1/lightcraft-cli-0.18.1-macos-universal.zip"
+        sha256 "519b9dcaef272a0472604f333acb40a4380df731ef810e738e42f099e3a868b9"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/lightcraft/releases/download/v0.18.0/lightcraft-0.18.0-linux-aarch64.tar.gz"
-            sha256 "5fd6e2ff2b3e76a021b2d14e5e19aa1754a163b4c59d14866a501e72f6c32005"
+            url "https://github.com/storytold/lightcraft/releases/download/v0.18.1/lightcraft-0.18.1-linux-aarch64.tar.gz"
+            sha256 "9fdb661b64d8449b0f98b1677683eb4b33049896488bfd273c15406cead11657"
         else
-            url "https://github.com/storytold/lightcraft/releases/download/v0.18.0/lightcraft-0.18.0-linux-x86_64.tar.gz"
-            sha256 "f2dcaa287d510f9125273d9d16089e713943aef005bd03d9848d95ac55d8750f"
+            url "https://github.com/storytold/lightcraft/releases/download/v0.18.1/lightcraft-0.18.1-linux-x86_64.tar.gz"
+            sha256 "078f8e4fef6ca88afa257a70228630b14e21380cea58031fbb5c5a1942b406f0"
         end
     end
 
