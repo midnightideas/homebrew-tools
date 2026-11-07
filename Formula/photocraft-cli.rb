@@ -1,20 +1,20 @@
 class PhotocraftCli < Formula
     desc "Photoshop-style raster image editor (CLI)."
     homepage "https://github.com/storytold/photocraft"
-    version "0.20.2"
+    version "0.21.0"
 
     on_macos do
-        url "https://github.com/storytold/photocraft/releases/download/v0.20.2/photocraft-cli-0.20.2-macos-universal.zip"
-        sha256 "25f90078e0a3201ac4bd7778bbb4f6de1f2b67357c98e1cc54052d6240eaaa35"
+        url "https://github.com/storytold/photocraft/releases/download/v0.21.0/photocraft-cli-0.21.0-macos-universal.zip"
+        sha256 "17199a41ea53abb023b16ef34dd7908d0e4f317af73c488a7000f812a07df802"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/photocraft/releases/download/v0.20.2/photocraft-0.20.2-linux-aarch64.tar.gz"
-            sha256 "a1c3761d132d9ec162691d50f06ed98473bcdc0aed7c171a097df9adcfc38072"
+            url "https://github.com/storytold/photocraft/releases/download/v0.21.0/photocraft-0.21.0-linux-aarch64.tar.gz"
+            sha256 "748dce025c14b0bc162edae6b38b5fb552f8d248417544fcc3ac43d65d6d5cb9"
         else
-            url "https://github.com/storytold/photocraft/releases/download/v0.20.2/photocraft-0.20.2-linux-x86_64.tar.gz"
-            sha256 "09e013d68d8313eb0b1cd6f24612f5b5fd0d993fffe3a7c12cecdfe5cd131a46"
+            url "https://github.com/storytold/photocraft/releases/download/v0.21.0/photocraft-0.21.0-linux-x86_64.tar.gz"
+            sha256 "3115e56cc646dbad3541e39b6323b8a24318fee6194d784ddf6d065f7b5d2d37"
         end
     end
 
