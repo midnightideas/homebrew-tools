@@ -1,19 +1,19 @@
 cask "deckcraft" do
-    version "0.15.1"
+    version "0.16.0"
 
     on_macos do
-        url "https://github.com/storytold/deckcraft/releases/download/v0.15.1/deckcraft-0.15.1-macos-universal.dmg"
-        sha256 "bfef3703ddfe4c2fb591419d7a1937483e3de2804448a7f262965f3c5dcdc93b"
+        url "https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-macos-universal.dmg"
+        sha256 "e9cf0eee693866a359e6905abcb30bb688dbaf57d604145d5668f1849b8ba247"
         app "DeckCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/deckcraft/releases/download/v0.15.1/deckcraft-0.15.1-linux-aarch64.AppImage"
-            sha256 "d8eb23109cad4c423f345b8e503631e65be8ef8d5a8eef5e9ebba1697fa13a5e"
+            url "https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-linux-aarch64.AppImage"
+            sha256 "167e86a06fc0780823ff5ef6a5052e36d1809cd4e3e35f6726db12b2b4a63b49"
         else
-            url "https://github.com/storytold/deckcraft/releases/download/v0.15.1/deckcraft-0.15.1-linux-x86_64.AppImage"
-            sha256 "f9557d153189597839a456133dcf97272baac152031871fad0aec3b6d6560785"
+            url "https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-linux-x86_64.AppImage"
+            sha256 "1211d8b517377eed0fc037d64daef1b75b7ee278e0620ab0d7e7beb6e86183f7"
         end
     end
 
