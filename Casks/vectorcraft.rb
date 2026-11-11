@@ -1,19 +1,19 @@
 cask "vectorcraft" do
-    version "0.22.0"
+    version "0.23.0"
 
     on_macos do
-        url "https://github.com/storytold/vectorcraft/releases/download/v0.22.0/vectorcraft-0.22.0-macos-universal.dmg"
-        sha256 "29eace31f0f1472f87d35d7f90bb09b8374413c4ac1adfb1f537431dc148fb60"
+        url "https://github.com/storytold/vectorcraft/releases/download/v0.23.0/vectorcraft-0.23.0-macos-universal.dmg"
+        sha256 "8bee3c5429487e708f95469c6568f750c700f97b86483a6f6cbfd0769b25be1b"
         app "VectorCraft.app"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/vectorcraft/releases/download/v0.22.0/vectorcraft-0.22.0-linux-aarch64.AppImage"
-            sha256 "30774df9c03fc76b6ad4adfbf2e2433351c4f3711caf6956620996d0bdfad0b9"
+            url "https://github.com/storytold/vectorcraft/releases/download/v0.23.0/vectorcraft-0.23.0-linux-aarch64.AppImage"
+            sha256 "2ae656a187f4adaa288c6ebfa6fd7fa66e00db8a51e5797f175f2f2f81701cc7"
         else
-            url "https://github.com/storytold/vectorcraft/releases/download/v0.22.0/vectorcraft-0.22.0-linux-x86_64.AppImage"
-            sha256 "09a68d22232530219c12643bb7e9eda6b1f6778cbf9f2f2fc46ff96e2259f7b0"
+            url "https://github.com/storytold/vectorcraft/releases/download/v0.23.0/vectorcraft-0.23.0-linux-x86_64.AppImage"
+            sha256 "8a130f448fa8dff0a279dcefca56229f5702cb341123263436d587c45be2a8e4"
         end
     end
 
