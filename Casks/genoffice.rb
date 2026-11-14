@@ -1,22 +1,32 @@
 cask "genoffice" do
-    version "0.12.852"
+    version "0.13.18"
 
     on_macos do
         on_arm do
-            url "https://github.com/genspark-ai/genoffice/releases/download/v0.12.852/GenOffice-0.12.852-arm64.dmg"
-            sha256 "7724ead484688d4bc061dbdfdf1326340b7fb8101c796d2760b2baf63721f52b"
+            url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.18/GenOffice-0.13.18-arm64.dmg"
+            sha256 "693c690caa50082700520e86f3690af9f35d123f7546ce328e2202b82b8f6b2f"
         end
         on_intel do
-            url "https://github.com/genspark-ai/genoffice/releases/download/v0.12.852/GenOffice-0.12.852.dmg"
-            sha256 "5b7404ac401e64592fb8d84cb54ec3282dcf0f61cd33b5d2855cebd2b9f32365"
+            url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.18/GenOffice-0.13.18.dmg"
+            sha256 "f157deb95ad15bd1808792f7ce75167697bce53a04f9378432cac0465bbbf605"
         end
         app "GenOffice.app"
+        zap trash: [
+            "~/Library/Application Support/GenOffice",
+            "~/Library/Caches/GenOffice",
+            "~/Library/Preferences/com.genoffice.app.plist",
+        ]
     end
 
     on_linux do
         depends_on arch: :x86_64
-        url "https://github.com/genspark-ai/genoffice/releases/download/v0.12.852/GenOffice-0.12.852.AppImage"
-        sha256 "824e2d75f2eb5d1851dc502e9224c1d44b020dbcf626577473993b31d60c7fde"
+        url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.18/GenOffice-0.13.18.AppImage"
+        sha256 "edd687d50edcaee44b1b30c35feb671a313401cb6df26963e5897b99228d1871"
+        app_image "GenOffice-0.13.18.AppImage", target: "GenOffice.AppImage"
+        zap trash: [
+            "~/.config/GenOffice",
+            "~/.cache/GenOffice",
+        ]
     end
 
     name "GenOffice"
@@ -27,14 +37,4 @@ cask "genoffice" do
         url :url
         strategy :github_latest
     end
-
-    zap trash: [
-        "~/Library/Application Support/GenOffice",
-        "~/Library/Caches/GenOffice",
-        "~/Library/Logs/GenOffice",
-        "~/Library/Preferences/com.genoffice.app.plist",
-        "~/.config/GenOffice",
-        "~/.cache/GenOffice",
-        "~/.genoffice",
-    ]
 end
