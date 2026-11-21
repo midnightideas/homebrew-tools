@@ -1,14 +1,14 @@
 cask "genoffice" do
-    version "0.13.18"
+    version "0.13.615"
 
     on_macos do
         on_arm do
-            url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.18/GenOffice-0.13.18-arm64.dmg"
-            sha256 "693c690caa50082700520e86f3690af9f35d123f7546ce328e2202b82b8f6b2f"
+            url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.615/GenOffice-0.13.615-arm64.dmg"
+            sha256 "9ef7cad7bdb2c67925c5d46c783ac19cdc18560a7350f399d5cc22029a7dfe7e"
         end
         on_intel do
-            url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.18/GenOffice-0.13.18.dmg"
-            sha256 "f157deb95ad15bd1808792f7ce75167697bce53a04f9378432cac0465bbbf605"
+            url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.615/GenOffice-0.13.615.dmg"
+            sha256 "53346e96607d40026ede61682af255349815d6283afe50a25b85b97082b1ac1c"
         end
         app "GenOffice.app"
         zap trash: [
@@ -20,9 +20,9 @@ cask "genoffice" do
 
     on_linux do
         depends_on arch: :x86_64
-        url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.18/GenOffice-0.13.18.AppImage"
-        sha256 "edd687d50edcaee44b1b30c35feb671a313401cb6df26963e5897b99228d1871"
-        app_image "GenOffice-0.13.18.AppImage", target: "GenOffice.AppImage"
+        url "https://github.com/genspark-ai/genoffice/releases/download/v0.13.615/GenOffice-0.13.615.AppImage"
+        sha256 "78b9cee9040ee19be233821b025ea28e0d565628f2f50a0abb5888c71dee8ca6"
+        app_image "GenOffice-0.13.615.AppImage", target: "GenOffice.AppImage"
         zap trash: [
             "~/.config/GenOffice",
             "~/.cache/GenOffice",
