@@ -1,9 +1,9 @@
 cask "pdfcraft" do
-    version "0.21.1"
+    version "0.22.0"
 
     on_macos do
-        url "https://github.com/storytold/pdfcraft/releases/download/v0.21.1/pdfcraft-0.21.1-macos-universal.dmg"
-        sha256 "1adc9bf3d319e707e9247004db05a32a059634e3710fe79bc14f92f689ca4d4a"
+        url "https://github.com/storytold/pdfcraft/releases/download/v0.22.0/pdfcraft-0.22.0-macos-universal.dmg"
+        sha256 "ad45ca52a793c7cda1bae1acb6757b5ee12f07bfaec22ce4344e5e5460340634"
         app "PdfCraft.app"
         zap trash: [
             "~/Library/Application Support/PdfCraft",
@@ -13,13 +13,13 @@ cask "pdfcraft" do
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/pdfcraft/releases/download/v0.21.1/pdfcraft-0.21.1-linux-aarch64.AppImage"
-            sha256 "e34a136f1f9a3feabdb5a4ea8f8fba1bb3e5ac54f3962490e7e041fdcf58df5f"
-            app_image "pdfcraft-0.21.1-linux-aarch64.AppImage", target: "PdfCraft.AppImage"
+            url "https://github.com/storytold/pdfcraft/releases/download/v0.22.0/pdfcraft-0.22.0-linux-aarch64.AppImage"
+            sha256 "7ede1c280a5b27e9ae32523fe79de4aeb7d8f42f15fbc8b8569719ddbef9fa9d"
+            app_image "pdfcraft-0.22.0-linux-aarch64.AppImage", target: "PdfCraft.AppImage"
         else
-            url "https://github.com/storytold/pdfcraft/releases/download/v0.21.1/pdfcraft-0.21.1-linux-x86_64.AppImage"
-            sha256 "730276cda9addb3d48f26c602686d18fc5bc0ebe360a60a2f522d70cfd428d21"
-            app_image "pdfcraft-0.21.1-linux-x86_64.AppImage", target: "PdfCraft.AppImage"
+            url "https://github.com/storytold/pdfcraft/releases/download/v0.22.0/pdfcraft-0.22.0-linux-x86_64.AppImage"
+            sha256 "771f61b07aaf8cc17e73cb1f93fbe88526f27b0aa82ff32d0710e2c375f49248"
+            app_image "pdfcraft-0.22.0-linux-x86_64.AppImage", target: "PdfCraft.AppImage"
         end
         zap trash: [
             "~/.config/pdfcraft",
