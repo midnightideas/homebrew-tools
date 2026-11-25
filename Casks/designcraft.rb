@@ -1,9 +1,9 @@
 cask "designcraft" do
-    version "0.20.1"
+    version "0.21.1"
 
     on_macos do
-        url "https://github.com/storytold/designcraft/releases/download/v0.20.1/designcraft-0.20.1-macos-universal.dmg"
-        sha256 "f45b2bf5543c1d8c37d09a971e99420d6ef3d97b6ebe33e31b36d2a3c39eb0c2"
+        url "https://github.com/storytold/designcraft/releases/download/v0.21.1/designcraft-0.21.1-macos-universal.dmg"
+        sha256 "9964d13556c7e0f03abf6f4ab20bde8a9d6c9db744d4d3cc6c67753862064f00"
         app "DesignCraft.app"
         zap trash: [
             "~/Library/Application Support/DesignCraft",
@@ -12,13 +12,13 @@ cask "designcraft" do
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/designcraft/releases/download/v0.20.1/designcraft-0.20.1-linux-aarch64.AppImage"
-            sha256 "14e6412cc8b15633571c0b09869b89f23ea2ac61b3e6819b3b26284e92b68693"
-            app_image "designcraft-0.20.1-linux-aarch64.AppImage", target: "DesignCraft.AppImage"
+            url "https://github.com/storytold/designcraft/releases/download/v0.21.1/designcraft-0.21.1-linux-aarch64.AppImage"
+            sha256 "513bef6d184c2e78330d26490be7f7c495504caaf88fa8b61490192a8fb03e79"
+            app_image "designcraft-0.21.1-linux-aarch64.AppImage", target: "DesignCraft.AppImage"
         else
-            url "https://github.com/storytold/designcraft/releases/download/v0.20.1/designcraft-0.20.1-linux-x86_64.AppImage"
-            sha256 "f9d6fd6bb1a421850243c0d4be44235713a9ec5b26f8bf1d5ba87afcf8f91534"
-            app_image "designcraft-0.20.1-linux-x86_64.AppImage", target: "DesignCraft.AppImage"
+            url "https://github.com/storytold/designcraft/releases/download/v0.21.1/designcraft-0.21.1-linux-x86_64.AppImage"
+            sha256 "bb08f639ca036da0d271aca1f1f4c9bd711415c4f7e085bc1bf42d7b1f6e0c03"
+            app_image "designcraft-0.21.1-linux-x86_64.AppImage", target: "DesignCraft.AppImage"
         end
         zap trash: [
             "~/.config/designcraft",
