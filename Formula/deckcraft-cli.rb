@@ -1,20 +1,20 @@
 class DeckcraftCli < Formula
     desc "PowerPoint-style presentation builder (CLI)."
     homepage "https://github.com/storytold/deckcraft"
-    version "0.18.1"
+    version "0.19.1"
 
     on_macos do
-        url "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-cli-0.18.1-macos-universal.zip"
-        sha256 "10992f73c88a4c0361dd0fec3a4d7490731ffb3ea9658ee2274b396e3341af00"
+        url "https://github.com/storytold/deckcraft/releases/download/v0.19.1/deckcraft-cli-0.19.1-macos-universal.zip"
+        sha256 "1285b14823cd413ee2a666b501f8ba5076ce2ba043938143bc04bf26ec5bf0e8"
     end
 
     on_linux do
         if Hardware::CPU.arm?
-            url "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-linux-aarch64.tar.gz"
-            sha256 "3fbd005ce382c853ad056dca7b937802fc0ef6b8564eca5a99a52b670c159e94"
+            url "https://github.com/storytold/deckcraft/releases/download/v0.19.1/deckcraft-0.19.1-linux-aarch64.tar.gz"
+            sha256 "20eb8d82847e1a89cfc26eb5b804c8406e66e0c64e2bfc601236f4ad046f6b21"
         else
-            url "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-linux-x86_64.tar.gz"
-            sha256 "5bae7d5566638624411ef968f2532ab3358dc280884144583e497c5631db8a26"
+            url "https://github.com/storytold/deckcraft/releases/download/v0.19.1/deckcraft-0.19.1-linux-x86_64.tar.gz"
+            sha256 "ec75aaaef10a6dc4813f7ebf0f7fd8f980520c5b3d051ba3d76204c9e5d76fea"
         end
     end
 
